@@ -18,6 +18,7 @@ const elementComponent = () => {
 
 const Element = () => {
   return (<>
+    <App/>
     <h1>Hello {a}</h1>
     <p>fragment ile sarmalla</p>
     <Child /> 
