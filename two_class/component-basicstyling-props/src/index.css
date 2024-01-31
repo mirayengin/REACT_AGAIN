@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+footer {
+  color : white;
+  background-color: black;
+  text-align: center;
+  padding: 2rem;
+}
+/* Şuan burda biz tag elementini çağırdık ve ona style verdik class name ile değil  */
+header{
+  color : red;
+  background-color: yellow;
+  text-align: center;
+  padding: 2rem;
+}
