@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>JSX & COMPONENT & BASİC STYLING</h1>
-      <p>Ders 2 50 dk kaldım</p>
+      <p>Ders 2 1:57  dk kaldım</p>
       <Header />
       <Footer />
       <Content/>
