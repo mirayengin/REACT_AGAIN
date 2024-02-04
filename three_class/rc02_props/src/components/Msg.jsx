@@ -1,15 +1,16 @@
-const Msg = (props) => {
-// const Mgs = ({name,age}) => { yolda destruc yöntemi
-  console.log(props)
-  const {name,age} = props
+const Msg = ({ name, age }) => {
+  //*   console.log(props) çıktısı object formatında;
+
+  //! desctructing,
+  // const {name} = props
+
   return (
     <div>
-      {/* bu yazım şekili destruct etmeden önce oluyor */}
-      <h3>Merhanba {props.name}</h3>
-      {/* bu yazım şekili destruct edince , ayrıca yolda decstruct yaptığımızdada bu şekilde kullanabiliriz*/}
-      <h2>Merhaba {name} yaşın { age}</h2>
+      <h3>
+        Hello {name}, {age}
+      </h3>
     </div>
-  )
-}
+  );
+};
 
-export default Msg
+export default Msg;
