@@ -1,6 +1,8 @@
 .person-1 {
  display: flex;
  justify-content:space-around;
+ background-color: aqua;
+ padding: 0 2rem 0 2rem;
 }
 
 .person-img {

@@ -10,10 +10,10 @@ const Person = ({props}) => {
       <div className="person-1">
         <p>I'm {props.name} </p>
         <div>
-          <img className="person-img" src={props.img} alt="img" />
+          <img className="person-img" src={img} alt="img" />
         </div>
       </div>
-      <Msg props={tel} />
+      <Msg tel={tel} />
     </>
   )
 };

@@ -10,7 +10,7 @@ function App() {
       {data.map((item) => {
         return (
           <>
-                      {/*<Person key = {item.name} name={item.name} img = {item.img} tel = {item.tel} />*/ }
+          {/*<Person key = {item.name} name={item.name} img = {item.img} tel = {item.tel} />*/ }
           <Person key = {item.name} props = {item} />
           </>
 
