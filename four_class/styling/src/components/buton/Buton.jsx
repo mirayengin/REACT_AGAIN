@@ -1,11 +1,13 @@
 import React from "react"
-import "./buton.css"
+// import "./buton.css"
+import ButonStyle from  "./buton.module.css"
 
-const Buton = () => {
+const Buton = ({ btn }) => {
+  console.log(btn)
   return (
-    <>
-      <p>Buton</p>
-    </>
+    <div className={ButonStyle.title} >
+      <button className={ButonStyle["btn-blue"]}>{btn} </button>
+    </div>
   )
 };
 

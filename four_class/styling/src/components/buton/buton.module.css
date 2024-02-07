@@ -1,0 +1,15 @@
+.btn-blue {
+  cursor: pointer;
+  background-color:#0069d9;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  width: 5rem;
+  border: none;
+  margin: 5px;
+
+}
+
+.title {
+  text-align: center;
+}
