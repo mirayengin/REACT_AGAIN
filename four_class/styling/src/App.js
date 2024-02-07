@@ -10,7 +10,7 @@ function App() {
       {data.map((item) => {
         let {id,img,language,btnName} = item
         return (
-          <Card data={item} />
+          <Card key = {id} id={id} language = {language} img = {img} btn = {btnName} />
         )
       })}
       
