@@ -9,10 +9,11 @@ const Card = ({language,img, id,btn}) => {
   // let { id, language, btnName } = props;
   console.log(language)
   return (
-    <div className={CardStyle.title}>
-      <h1>{language}</h1>
+    <div >
+      <h1 className={CardStyle["title"]}>{language}</h1>
       <img className={CardStyle.images} src={img} alt="img" />
-      <Buton key = {btn} btn = {btn} />
+      <Buton key={btn} btn={btn} />
+      <p>1:56 da kaldım</p>
     </div>
   )
 }
