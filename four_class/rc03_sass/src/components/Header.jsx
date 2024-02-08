@@ -1,3 +1,4 @@
+import HeaderStyle from "../sass/header.module.scss";
 
 
 const Header = () => {
