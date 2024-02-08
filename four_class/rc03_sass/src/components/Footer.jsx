@@ -1,13 +1,9 @@
-import FooterStyle from "../scss/footer.module.scss";
+import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className={FooterStyle.footer}>
-      <p className={FooterStyle.title}>
-        Copyright by Clarusway {new Date().getFullYear()}
-      </p>
-    </footer>
-  );
-};
+    <div>Footer</div>
+  )
+}
 
-export default Footer;
+export default Footer
