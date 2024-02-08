@@ -13,7 +13,6 @@ const Card = ({language,img, id,btn}) => {
       <h1 className={CardStyle["title"]}>{language}</h1>
       <img className={CardStyle.images} src={img} alt="img" />
       <Buton key={btn} btn={btn} />
-      <p>1:56 da kaldım</p>
     </div>
   )
 }
