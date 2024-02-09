@@ -1,0 +1,51 @@
+@import "../../scss/variables";
+
+.container {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  .Cardcontainer {
+    padding: 5px;
+    background-color: $Purple;
+    text-align: center;
+    color: white;
+    border: white solid;
+    padding-bottom: 2rem;
+    box-shadow: 1rem 1rem 1rem 20px white;
+    position: relative;
+
+    img {
+      width: 10rem;
+      height: auto;
+      border-radius: 2rem;
+    }
+
+    div {
+      button {
+        position: relative; /* Butonun üzerine göre konumlandırma yapmak için */
+        border-radius: 1rem;
+        padding: 8px 16px;
+        &:hover {
+          cursor: pointer;
+          background-color: $Green;
+
+          /* Butonun üzerindeki "Seni Seviyorum" mesajı */
+          &::after {
+            content: "Seni Seviyorum";
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            color: #ff0000;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            z-index: 1; /* Mesajın butonun üzerinde kalmasını sağlar */
+          }
+        }
+      }
+    }
+  }
+}
