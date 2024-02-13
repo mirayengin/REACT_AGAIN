@@ -1,9 +1,11 @@
+import Events from "./component/1-events/Events";
 
 
 function App() {
   return (
     <div className="App">
-      <p>React Learn</p>
+      <Events />
+      <p>40 dk</p>
     </div>
   );
 }
