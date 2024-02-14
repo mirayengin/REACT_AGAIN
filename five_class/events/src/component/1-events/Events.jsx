@@ -1,6 +1,10 @@
 
 
 const Events = () => {
+  let  message = "EVENT BASED PRORAMING";
+
+
+
   const handleClick = () => {
     alert("Button click")
    
@@ -12,6 +16,8 @@ const Events = () => {
 
   const handleChange = (event) => {
     console.log(event.target)
+    let message = "REACT"
+    console.log(message)
     //! event'lar dahili olarak gelir ve fonksiyondan göndermemize gerek yok sadece event için
   }
 
@@ -20,6 +26,7 @@ const Events = () => {
 
   return (
     <div className="container text-center mt-4">
+      <h1>{ message}</h1>
       <button onClick={handleClick} className="btn btn-success">Click</button>
       
       <button onClick={() => handleClear("Clear Btn Cliked")} className="btn btn-dark" >Clear</button>
