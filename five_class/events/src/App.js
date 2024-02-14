@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <Events />
-      <p>40 dk</p>
     </div>
   );
 }
