@@ -1,19 +1,23 @@
 import { useState } from "react";
 
 const Form = () => {
-  const [username, setUsername] = useState("Aslı");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //! Bu olay doğal çalışma döngüsünü durdurur bizim kontrolümüze verir mesela form da submit yaptığımzda otomatik sıfırlama yapar ama bunla yapmaz.
     console.log(e.target)
     alert(`
       username: ${username},
       email: ${email},
       password: ${password}
     `)
+
+    setUsername("");
+    setEmail("");
+    setPassword("")
   }
 
   const handleUserChange = (e) => {
