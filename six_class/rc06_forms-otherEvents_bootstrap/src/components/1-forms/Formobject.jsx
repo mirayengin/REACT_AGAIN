@@ -19,10 +19,18 @@ const Formobject = () => {
       password: ${password}
     `)
 
+      setFormValues({
+        username: "",
+        email: "",
+        password : ""
+      })
   }
 
   const handleForm = (e) => {
-    console.log(e.target)
+    console.log(e.target.value);
+    console.log(e.target.id)
+    //? setFormValues bunu biz state i değiştirmek için kullanıyoruz.
+    setFormValues({...formValues, [e.target.id]:e.target.value }) //! bu keyde köşeli parantez kullanma (square braket) sebebim dinamik olduğu için
   }
 
 
@@ -33,7 +41,7 @@ const Formobject = () => {
 
   return (    
     <form onSubmit={handleSubmit}>
-      <h1 className="display-5 text-danger">FORMS OBJECT 1.DERS BİTTİ</h1>
+      <h1 className="display-5 text-danger">FORMS OBJECT</h1>
   <div className="mb-3">
     <label htmlFor="username" className="form-label">
       Username : <span>{username}</span> 
