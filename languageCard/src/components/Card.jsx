@@ -8,8 +8,8 @@ import Col from "react-bootstrap/Col";
 const Card = () => {
   console.log(data);
   return (
-    <Container  className="rounded-4 mt-4" style = {{background : "#f48b29"}}>
-      <h1>Languages</h1>
+    <Container  className="rounded-4 mt-4 p-2" style = {{background : "#f48b29"}}>
+      <h1 className="text-white my-2" >Languages</h1>
       <Row>
         {data.map((lang, index) => {
           return (
