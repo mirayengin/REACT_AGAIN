@@ -7,3 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
+
+//? Burada React.StrıctMode ile cevrelendiğinde aynı kodu iki defa calıştırıyor. Sebebi test amaçlı biri
+
